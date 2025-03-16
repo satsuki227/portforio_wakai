@@ -203,7 +203,7 @@ footer {
 .other {
   margin-bottom: 220px;
 }
-.other img {
+.other_img {
   display: block;
   max-width: 700px;
   margin: 0 auto;
@@ -740,6 +740,12 @@ textarea.c-form__input {
 }
 .other_img {
   padding-top: 55px;
+  width: 700px;
+  height: 395px;
+}
+.other_img_2 {
+  padding-top: 55px;
+  max-width: 700px;
 }
 #text_bold {
   margin-bottom: 10px;
