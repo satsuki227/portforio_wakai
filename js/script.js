@@ -95,10 +95,24 @@ $(function () {
           });
       }
     });
+
+    // .box の処理
+    $(".web_box").each(function (index) {
+      if ($(this).offset().top - winH * 0.7 < scrollTop) {
+        $(this)
+          .delay(index * 300)
+          .queue(function (next) {
+            $(this).addClass("ready");
+            next();
+          });
+      }
+    });
   });
+  
 
   // 初回チェック（ロード時にスクロールイベントを実行）
   $(document).ready(function () {
     $(window).trigger("scroll");
   });
 });
+
